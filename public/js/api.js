@@ -2,7 +2,7 @@ server = 'https://back-end-test-app.herokuapp.com/'
 
 // LISTA DE COMPETIDORES
 var settings = {
-  "url": server+"/read",
+  "url": server+"read",
   "method": "GET",
   "timeout": 0,
   "headers": {
@@ -32,7 +32,7 @@ $.ajax(settings).done(function (response) {
 $('#register').submit(function(e){
   e.preventDefault()
   var settings = {
-    "url": server+"/create",
+    "url": server+"create",
     "method": "POST",
     "timeout": 0,
     "headers": {
@@ -64,7 +64,7 @@ $('#register').submit(function(e){
 $('#register_special').submit(function(e){
   e.preventDefault()
   var settings = {
-    "url": server+"/create_special_link",
+    "url": server+"create_special_link",
     "method": "POST",
     "timeout": 0,
     "headers": {
@@ -95,7 +95,7 @@ $('#register_special').submit(function(e){
 $('#btn_end').click(function(e){
   if(confirm('Confirma Finalizar Competição? Vai pagar todos os registros.')){
     var settings = {
-      "url": server+"/delete",
+      "url": server+"delete",
       "method": "DELETE",
       "timeout": 0,
       "headers": {
