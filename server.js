@@ -12,7 +12,7 @@ var db           = require('./connect.js');
 connection = mysql.createConnection(db);
 
 const app     = express()
-const port    = 3000
+const port    = process.env.PORT
 
 //
 app.engine('handlebars', exphbs());

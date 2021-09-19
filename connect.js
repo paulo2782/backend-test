@@ -1,8 +1,8 @@
 // Conexão com Banco de Dados MYSQL
 var connect = {
-  host     : 'localhost',
-  user     : 'root',
-  password : '',
+  host     : '177.137.117.196',
+  user     : 'fidelizou',
+  password : 'fidelizou',
   database : 'fidelizou'
 };
 
